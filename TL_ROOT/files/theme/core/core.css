@@ -1,0 +1,4 @@
+body                            { font-size: 13px; }
+img, object, embed              { max-width: 100%; }
+img                             { height: auto; }
+iframe                          { width: 100%; }

@@ -1,0 +1,86 @@
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ * Table of contents
+ * -----------------------------------------
+ * 1. Basic Variables
+ * 2. Extensions
+ *
+ */
+
+
+/* ========================================================================== 
+	1. Basic Variables
+   ========================================================================== */
+
+@define{
+
+
+    /* architecture
+    ========================================================================== */
+    border-radius: 4px;
+
+
+
+    /* font
+    ========================================================================== */
+    base-font: arial, sans-serif;
+    base-font-size: 15px;
+    base-font-color: #191919;
+
+
+    /* colors
+    ========================================================================== */
+    light-company-color: rgb(245, 245, 245);
+    dark-company-color: rgb(224, 224, 224);
+    highlight-company-color: rgb(242, 242, 242);
+
+    /** buttons */
+    base-button-color: #ccc;
+
+    /* mobile nav */
+    mobile-nav-color: $(dark-company-color);
+
+
+
+    /* lines
+    ========================================================================== */
+    base-border-achitecture: 1px solid #ccc;
+    dark-border-achitecture: 1px solid #ccc;
+
+
+
+
+
+    /* backgrounds
+    ========================================================================== */
+
+
+}
+
+
+
+/* ==========================================================================
+	2. Extensions - use: .class{@include myFirstDependencie}
+   ========================================================================== */
+
+@abstract myFirstDependencie{}
+
+.baseButton{
+    @name baseButton;
+    font-size: 100%;
+    padding: .5em 1.5em;
+    color: #444;
+    color: rgba(0, 0, 0, .8);
+    border: 1px solid #999;
+    border: 0 rgba(0, 0, 0, 0);
+    background-color: $(base-button-color);
+    text-decoration: none;
+    border-radius: $(border-radius);
+    -webkit-font-smoothing: antialiased;
+    transition: .1s linear box-shadow;
+}
