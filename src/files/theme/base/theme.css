@@ -1,0 +1,142 @@
+
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ * Table of contents
+ * -----------------------------------------
+ * 1. HTML Elements
+ * 2. LAYOUT
+ * 3. CE_ Features
+ * 4. MOD_ Features
+ * 5. MODULES
+ */
+
+
+/* ========================================================================== 
+	1. HTML Elements
+   ========================================================================== */
+
+
+/* example seperator
+========================================================================== */
+
+/**
+ * Short description using Doxygen-style comment format
+ *
+ *
+ */
+
+
+/* Basic Comment */
+
+
+
+
+/* ========================================================================== 
+	2. LAYOUT
+   ========================================================================== */
+
+
+/* Sub Section comment block
+========================================================================== */
+
+
+
+
+/* ========================================================================== 
+	3. CE_ Features
+   ========================================================================== */
+
+
+/* Sub Section comment block
+========================================================================== */
+
+
+
+
+
+/* ========================================================================== 
+	4. MOD_ Features
+   ========================================================================== */
+
+
+/* Sub Section comment block
+========================================================================== */
+
+
+
+
+
+/* ========================================================================== 
+	5. MODULES
+   ========================================================================== */
+
+
+
+    /* mobile Navigation
+    ========================================================================== */
+
+    #main-navigation-mobile{
+        float: right;
+        clear: right;
+        width: 85px;
+    }
+
+    #main-navigation-mobile .menulabel{
+        display: none;
+    }
+
+    #main-navigation-mobile.jsmob .menulabel{
+        float: left;
+        padding-top: 33px;
+        color: $(mobile-nav-color);
+        font-size: 1.2em;
+        font-weight: 700;
+        display: block;
+    }
+
+    #main-navigation-mobile select{
+        width: 70px;
+        margin-top: 5px;
+    }
+
+    #main-navigation-mobile.jsmob select{
+        opacity: 0;
+        display: block;
+        height: 100%;
+        width: 100px;
+        left:-50px;
+        position: absolute;
+        -webkit-appearance:none;
+        margin-top: 0;
+    }
+
+    #main-navigation-mobile.jsmob form{
+        position: relative;
+        background: blue;
+        width: 30px;
+        height: 30px;
+        float: right;
+        padding: 0;
+        margin: 25px 0 0;
+        -webkit-box-sizing : border-box;
+        -moz-box-sizing    : border-box;
+        box-sizing         : border-box;
+        background: $(mobile-nav-color);
+
+        background: linear-gradient(to bottom,$(mobile-nav-color) 0%,$(mobile-nav-color) 20%,#ffffff 20%, #ffffff 40%,$(mobile-nav-color) 40%,$(mobile-nav-color) 60%,#ffffff 60%,#ffffff 80%, $(mobile-nav-color) 80%,$(mobile-nav-color) 100%);
+
+    }
+
+    #main-navigation-mobile .submit{
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    #main-navigation-mobile.jsmob .submit{
+        display: none;
+    }
