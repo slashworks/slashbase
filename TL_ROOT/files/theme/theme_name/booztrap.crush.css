@@ -1,0 +1,1738 @@
+/*
+ * CSS-Crush(ed) on 2015-02-12 16:29:50 +0000
+ * http://github.com/peteboere/css-crush (v2.1.0-beta)
+ * 
+ */
+/*.............................................................................
+    BooZii - A responsive bootstrap
+    Package: Bootstrap
+    Description: constructor file
+    Author: Joe Ray Gregory @ slashworks
+    License: LGPL
+.............................................................................*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Imports
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/* basic and required imports */
+/* config */
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ * @description provides global helper classes for basic element styling and positioning
+ *
+ * Table of contents
+ * -----------------------------------------
+ *
+ * A. Basic grid constants and breakpoint for grid container clear
+ *
+ * B.
+ * B.1. Desktop Big            - show/hide elements on defined at defined width or smaller
+ * B.2. Desktop Normal         - show/hide elements on defined at defined width or smaller
+ * B.3. Tablet Portrait Size   - show/hide elements on defined at defined width or smaller
+ * B.4. Smartphone Big Size    - show/hide elements on defined at defined width or smaller
+ * B.5. Smartphone Small Size  - show/hide elements on defined at defined width or smaller
+ */
+/* ==========================================================================
+	A. Grid Configuration
+   ========================================================================== */
+/* ==========================================================================
+	B. Breakpoint configuration
+   ========================================================================== */
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ * Table of contents
+ * -----------------------------------------
+ * 1. Basic Variables
+ * 2. Extensions
+ *
+ */
+/* ========================================================================== 
+	1. Basic Variables
+   ========================================================================== */
+/* ==========================================================================
+	2. Extensions - use: .class{@include myFirstDependencie}
+   ========================================================================== */
+.baseButton {
+    padding: .5em 1.5em;
+    border: 1px solid #999;
+    border: 0 rgba(0,0,0,0);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #444;
+    color: rgba(0,0,0,.8);
+    background-color: #ccc;
+    text-decoration: none;
+    font-size: 100%;
+    -webkit-transition: .1s linear box-shadow;
+    -moz-transition: .1s linear box-shadow;
+    -o-transition: .1s linear box-shadow;
+    transition: .1s linear box-shadow;
+    -webkit-font-smoothing: antialiased;
+    }
+
+/* core files */
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+    }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+    }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+    display: none;
+    }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    }
+
+/**
+ * Remove default margin.
+ */
+body {
+    margin: 0;
+    }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+    background: transparent;
+    }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+    outline: thin dotted;
+    }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+    outline: 0;
+    }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+    margin: .67em 0;
+    font-size: 2em;
+    }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+    }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold;
+    }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+    font-style: italic;
+    }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+    color: #000;
+    background: #ff0;
+    }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace,serif;
+    font-size: 1em;
+    }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+    white-space: pre-wrap;
+    }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+    font-size: 80%;
+    }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    }
+sup {
+    top: -.5em;
+    }
+sub {
+    bottom: -.25em;
+    }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+    border: 0;
+    }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+    overflow: hidden;
+    }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+    margin: 0;
+    }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid #c0c0c0;
+    }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+    padding: 0;
+    border: 0;
+    }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+    }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+    line-height: normal;
+    }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+    text-transform: none;
+    }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+    cursor: default;
+    }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+    }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+    }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+body {
+    font-size: 13px;
+    }
+img,
+object,
+embed {
+    max-width: 100%;
+    }
+img {
+    height: auto;
+    }
+iframe {
+    width: 100%;
+    }
+
+/*.............................................................................
+    Package: Menu
+    Description: Menu Helpers to quickly build up Menues
+    Author: Joe Ray Gregory
+    Licence: LGPL
+.............................................................................*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global grid basics
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*----------------------------------------------------------------------------
+:Desc Define some standard grid values and prepare use of variables with css crush
+-----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of the grid wrapper thats needed to hold the units
+-----------------------------------------------------------------------------*/
+.grid {
+    width: 100%;
+    max-width: 1200px;
+    }
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of each unit
+-----------------------------------------------------------------------------*/
+.u_1,
+.u_2,
+.u_3,
+.u_4,
+.u_5,
+.u_6,
+.u_7,
+.u_8,
+.u_9,
+.u_10,
+.u_11,
+.u_12,
+.u_13,
+.u_14,
+.u_15,
+.u_16,
+.u_17,
+.u_18,
+.u_19,
+.u_20,
+.u_21,
+.u_22,
+.u_23,
+.u_24 {
+    float: left;
+    min-height: 1px;
+    margin-right: 1.66667%;
+    margin-left: 1.66667%;
+    }
+
+/* clear max column */
+.u_12 {
+    float: none;
+    clear: both;
+    }
+
+/*----------------------------------------------------------------------------
+:Desc Defines the width of each unit
+-----------------------------------------------------------------------------*/
+.u_1 {
+    width: 5%;
+    }
+.u_2 {
+    width: 13.33333%;
+    }
+.u_3 {
+    width: 21.66666%;
+    }
+.u_4 {
+    width: 29.99999%;
+    }
+.u_5 {
+    width: 38.33332%;
+    }
+.u_6 {
+    width: 46.66665%;
+    }
+.u_7 {
+    width: 54.99998%;
+    }
+.u_8 {
+    width: 63.33331%;
+    }
+.u_9 {
+    width: 71.66664%;
+    }
+.u_10 {
+    width: 79.99997%;
+    }
+.u_11 {
+    width: 88.3333%;
+    }
+.u_12 {
+    width: 96.66663%;
+    }
+.u_13 {
+    width: 104.99996%;
+    }
+.u_14 {
+    width: 113.33329%;
+    }
+.u_15 {
+    width: 121.66662%;
+    }
+.u_16 {
+    width: 129.99995%;
+    }
+.u_17 {
+    width: 138.33328%;
+    }
+.u_18 {
+    width: 146.66661%;
+    }
+.u_19 {
+    width: 154.99994%;
+    }
+.u_20 {
+    width: 163.33327%;
+    }
+.u_21 {
+    width: 171.6666%;
+    }
+.u_22 {
+    width: 179.99993%;
+    }
+.u_23 {
+    width: 188.33326%;
+    }
+.u_24 {
+    width: 196.66659%;
+    }
+
+/*----------------------------------------------------------------------------
+:Desc Push with the width of units + gutter etc.
+-----------------------------------------------------------------------------*/
+.p_1 {
+    margin-left: 10%;
+    }
+.p_2 {
+    margin-left: 18.33333%;
+    }
+.p_3 {
+    margin-left: 26.66666%;
+    }
+.p_4 {
+    margin-left: 34.99999%;
+    }
+.p_5 {
+    margin-left: 43.33332%;
+    }
+.p_6 {
+    margin-left: 51.66665%;
+    }
+.p_7 {
+    margin-left: 59.99998%;
+    }
+.p_8 {
+    margin-left: 68.33331%;
+    }
+.p_9 {
+    margin-left: 76.66664%;
+    }
+.p_10 {
+    margin-left: 84.99997%;
+    }
+.p_11 {
+    margin-left: 93.3333%;
+    }
+.p_12 {
+    margin-left: 101.66663%;
+    }
+.p_13 {
+    margin-left: 109.99996%;
+    }
+.p_14 {
+    margin-left: 118.33329%;
+    }
+.p_15 {
+    margin-left: 126.66662%;
+    }
+.p_16 {
+    margin-left: 134.99995%;
+    }
+.p_17 {
+    margin-left: 143.33328%;
+    }
+.p_18 {
+    margin-left: 151.66661%;
+    }
+.p_19 {
+    margin-left: 159.99994%;
+    }
+.p_20 {
+    margin-left: 168.33327%;
+    }
+.p_21 {
+    margin-left: 176.6666%;
+    }
+.p_22 {
+    margin-left: 184.99993%;
+    }
+.p_23 {
+    margin-left: 193.33326%;
+    }
+.p_24 {
+    margin-left: 201.66659%;
+    }
+
+/*----------------------------------------------------------------------------
+: Clear First-Childs
+-----------------------------------------------------------------------------*/
+.grid [class^=u_]:first-child,
+.u_12,
+.grid-first {
+    clear: both;
+    }
+
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ * @description provides global helper classes for basic element styling and positioning
+ *
+ * Table of contents
+ * -----------------------------------------
+ * 1. BODY
+ * 2. HEADLINES
+ * 3. LIST
+ * 4. TEXTFORMAT
+ * 5. FORM
+ * 6. TABLE
+ * 7. ACCORDION
+ * 8. SLIDER
+ */
+/* ==========================================================================
+	1. BODY
+   ========================================================================== */
+html {
+    color: #191919;
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    }
+
+/* ==========================================================================
+	2. HEADLINES
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    }
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+    color: #999;
+    font-weight: normal;
+    line-height: 1;
+    }
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+h4,
+h5,
+h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+h1,
+.h1 {
+    font-size: 48px;
+    font-size: 3rem;
+    }
+h2,
+.h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    }
+h3,
+.h3 {
+    font-size: 36.8px;
+    font-size: 2.3rem;
+    }
+h4,
+.h4 {
+    font-size: 32px;
+    font-size: 2rem;
+    }
+h5,
+.h5 {
+    font-size: 16px;
+    font-size: 1rem;
+    }
+h6,
+.h6 {
+    font-size: 16px;
+    font-size: 1rem;
+    }
+h1 small,
+.h1 small {
+    font-size: 40px;
+    font-size: 2.5rem;
+    }
+h2 small,
+.h2 small {
+    font-size: 20.8px;
+    font-size: 1.3rem;
+    }
+h3 small,
+.h3 small,
+h4 small,
+.h4 small {
+    font-size: 14.4px;
+    font-size: .9rem;
+    }
+
+/* ==========================================================================
+	3. LIST
+   ========================================================================== */
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-bottom: 0;
+    }
+dl {
+    margin-bottom: 20px;
+    }
+dt,
+dd {
+    line-height: 1.428571429;
+    }
+dt {
+    font-weight: bold;
+    }
+dd {
+    margin-left: 0;
+    }
+
+/* ==========================================================================
+    4. TEXTFORMAT
+    ========================================================================== */
+abbr[title] {
+    border-bottom: 1px dotted #999;
+    cursor: help;
+    }
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid #eee;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.25;
+    }
+blockquote p:last-child {
+    margin-bottom: 0;
+    }
+blockquote small {
+    display: block;
+    color: #999;
+    line-height: 1.428571429;
+    }
+blockquote small:before {
+    content: '\2014 \00A0';
+    }
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    }
+address {
+    display: block;
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.428571429;
+    }
+code,
+pre {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    }
+code {
+    padding: 2px 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    font-size: 14.4px;
+    font-size: .9rem;
+    white-space: nowrap;
+    }
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #333;
+    background-color: rgb(242,242,242);
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1.428571429;
+    word-break: break-all;
+    word-wrap: break-word;
+    }
+pre code {
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    white-space: pre-wrap;
+    }
+
+/* ==========================================================================
+	5. FORM
+   ========================================================================== */
+form {
+    margin: 0;
+    }
+form fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid silver;
+    }
+form legend {
+    padding: 0;
+    border: 0;
+    white-space: normal;
+    *margin-left: -7px;
+    }
+form button,
+form input,
+form select,
+form textarea {
+    vertical-align: baseline;
+    margin: 0;
+    font-size: 100%;
+    *vertical-align: middle;
+    }
+form button,
+form input {
+    line-height: normal;
+    }
+form button,
+form input[type=button],
+form input[type=reset],
+form input[type=submit] {
+    *overflow: visible;
+    -webkit-appearance: button;
+    cursor: pointer;
+    }
+form button[disabled],
+form input[disabled] {
+    cursor: default;
+    }
+form input[type=checkbox],
+form input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
+    }
+form input[type=search] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+    }
+form input[type=search]::-webkit-search-cancel-button,
+form input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    }
+form button::-moz-focus-inner,
+form input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+    }
+form textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+    }
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=url],
+form input[type=date],
+form input[type=month],
+form input[type=time],
+form input[type=datetime],
+form input[type=datetime-local],
+form input[type=week],
+form input[type=number],
+form input[type=search],
+form input[type=tel],
+form input[type=color],
+form select,
+form textarea {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: .5em .6em;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 3px #ddd;
+    box-shadow: inset 0 1px 3px #ddd;
+    font-size: 12.8px;
+    font-size: .8rem;
+    -webkit-transition: .3s linear border;
+    -moz-transition: .3s linear border;
+    -ms-transition: .3s linear border;
+    -o-transition: .3s linear border;
+    transition: .3s linear border;
+    -webkit-font-smoothing: antialiased;
+    }
+
+/* stacked */
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=url],
+form input[type=date],
+form input[type=month],
+form input[type=time],
+form input[type=datetime],
+form input[type=datetime-local],
+form input[type=week],
+form input[type=number],
+form input[type=search],
+form input[type=tel],
+form input[type=color],
+form select,
+form label,
+form textarea {
+    display: block;
+    margin: .25em 0;
+    }
+form input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus,
+form input[type=url]:focus,
+form input[type=date]:focus,
+form input[type=month]:focus,
+form input[type=time]:focus,
+form input[type=datetime]:focus,
+form input[type=datetime-local]:focus,
+form input[type=week]:focus,
+form input[type=number]:focus,
+form input[type=search]:focus,
+form input[type=tel]:focus,
+form input[type=color]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #129FEA;
+    outline: 0;
+    outline: thin dotted \9;
+    }
+form input[type=file]:focus,
+form input[type=radio]:focus,
+form input[type=checkbox]:focus {
+    outline: thin dotted #333;
+    outline: 1px auto #129FEA;
+    }
+form .pure-checkbox,
+form .pure-radio {
+    display: block;
+    margin: .5em 0;
+    }
+form input[type=text][disabled],
+form input[type=password][disabled],
+form input[type=email][disabled],
+form input[type=url][disabled],
+form input[type=date][disabled],
+form input[type=month][disabled],
+form input[type=time][disabled],
+form input[type=datetime][disabled],
+form input[type=datetime-local][disabled],
+form input[type=week][disabled],
+form input[type=number][disabled],
+form input[type=search][disabled],
+form input[type=tel][disabled],
+form input[type=color][disabled],
+form select[disabled],
+form textarea[disabled] {
+    color: #cad2d3;
+    background-color: #eaeded;
+    cursor: not-allowed;
+    }
+form input[readonly],
+form select[readonly],
+form textarea[readonly],
+form input[readonly]:focus,
+form select[readonly]:focus,
+form textarea[readonly]:focus {
+    border-color: #ccc;
+    color: #777;
+    background: #eee;
+    }
+form input:focus:invalid,
+form textarea:focus:invalid,
+form select:focus:invalid {
+    border: 1px solid #ee5f5b;
+    color: #b94a48;
+    }
+form input:focus:invalid:focus,
+form textarea:focus:invalid:focus,
+form select:focus:invalid:focus {
+    border-color: #e9322d;
+    }
+form input[type=file]:focus:invalid:focus,
+form input[type=radio]:focus:invalid:focus,
+form input[type=checkbox]:focus:invalid:focus {
+    outline-color: #e9322d;
+    }
+form select {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    }
+form select[multiple] {
+    height: auto;
+    }
+form label {
+    margin: .5em 0 .2em;
+    font-size: 90%;
+    }
+form fieldset {
+    padding: .35em 0 .75em;
+    margin: 0;
+    border: 0;
+    }
+form legend {
+    display: block;
+    width: 100%;
+    padding: .3em 0;
+    margin-bottom: .3em;
+    border-bottom: 1px solid #e5e5e5;
+    color: #333;
+    font-size: 125%;
+    }
+
+/* ==========================================================================
+	6. TABLE
+   ========================================================================== */
+table {
+    border: 1px solid #cbcbcb;
+    border-collapse: collapse;
+    empty-cells: show;
+    border-spacing: 0;
+    }
+table caption {
+    padding: 1em 0;
+    color: #000;
+    text-align: center;
+    font: italic 85%/1 arial,sans-serif;
+    }
+table td,
+table th {
+    overflow: visible;
+    padding: 6px 12px;
+    margin: 0;
+    border-width: 0 0 0 1px;
+    border-left: 1px solid #cbcbcb;
+    font-size: inherit;
+    }
+table td:first-child,
+table th:first-child {
+    border-left-width: 0;
+    }
+table thead {
+    vertical-align: bottom;
+    color: #000;
+    background: rgb(224,224,224);
+    text-align: left;
+    }
+table td {
+    background-color: transparent;
+    }
+table tr:nth-child(2n-1) td {
+    background-color: rgb(242,242,242);
+    }
+
+/* ==========================================================================
+	7. BUTTONS
+   ========================================================================== */
+button,
+input[type='submit'],
+.button,
+.submit {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: center;
+    cursor: pointer;
+    }
+button::-moz-focus-inner,
+input[type='submit']::-moz-focus-inner,
+.button::-moz-focus-inner,
+.submit::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+    }
+button,
+input[type='submit'],
+.button,
+.submit {
+    padding: .5em 1.5em;
+    border: 1px solid #999;
+    border: 0 rgba(0,0,0,0);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #444;
+    color: rgba(0,0,0,.8);
+    background-color: #ccc;
+    text-decoration: none;
+    font-size: 100%;
+    -webkit-transition: .1s linear box-shadow;
+    -moz-transition: .1s linear box-shadow;
+    -o-transition: .1s linear box-shadow;
+    transition: .1s linear box-shadow;
+    -webkit-font-smoothing: antialiased;
+    }
+button:hover,
+input[type='submit']:hover,
+.button:hover,
+.submit:hover,
+button:focus,
+input[type='submit']:focus,
+.button:focus,
+.submit:focus {
+    -webkit-box-shadow: 0 0 0 1px rgba(150,150,150,.15) inset,0 0 6px rgba(150,150,150,.2) inset;
+    box-shadow: 0 0 0 1px rgba(150,150,150,.15) inset,0 0 6px rgba(150,150,150,.2) inset;
+    background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: -moz-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: -o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    }
+button:focus,
+input[type='submit']:focus,
+.button:focus,
+.submit:focus {
+    outline: 0;
+    }
+button:active,
+input[type='submit']:active,
+.button:active,
+.submit:active {
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;
+    }
+button[disabled]:hover,
+button[disabled]:focus,
+input[type='submit'][disabled]:hover,
+input[type='submit'][disabled]:focus,
+.button[disabled]:hover,
+.button[disabled]:focus,
+.submit[disabled]:hover,
+.submit[disabled]:focus {
+    opacity: .4;
+    zoom: 1;
+    -ms-filter: "alpha(opacity=40)";
+    *filter: alpha(opacity=40);
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    cursor: not-allowed;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: alpha(opacity=40);
+    }
+
+/* ==========================================================================
+    7. ACCORDION
+    ========================================================================== */
+.ce_accordion {
+    display: block;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    }
+.ce_accordionSingle {
+    margin: 0 0 10px;
+    }
+.ce_accordionStart:nth-child(2n) {
+    border-top: none;
+    }
+.toggler {
+    padding: 9.5px;
+    background-color: rgb(245,245,245);
+    cursor: pointer;
+    }
+.toggler:focus {
+    outline: none;
+    }
+.accordion {
+    padding: 9.5px;
+    }
+
+/* ==========================================================================
+    8. SLIDER
+    ========================================================================== */
+.ce_sliderStart {
+    position: relative;
+    background: rgb(245,245,245);
+    }
+.content-slider {
+    position: relative;
+    visibility: hidden;
+    overflow: hidden;
+    }
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    }
+.slider-wrapper > * {
+    position: relative;
+    float: left;
+    width: 100%;
+    }
+.slider-control {
+    height: 30px;
+    }
+.slider-control a,
+.slider-control span {
+    position: absolute;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    }
+.slider-control .slider-prev {
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 100%;
+    background: #ccc;
+    text-indent: -9999px;
+    }
+.slider-control .slider-next {
+    z-index: 100;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 100%;
+    background: #ccc;
+    text-indent: -9999px;
+    }
+.slider-control .slider-menu {
+    bottom: 10px;
+    left: 50%;
+    width: 50%;
+    height: 30px;
+    margin-left: -25%;
+    text-align: center;
+    font-size: 48px;
+    font-size: 3rem;
+    }
+.slider-control .slider-menu b {
+    color: #fff;
+    cursor: pointer;
+    }
+.slider-control .slider-menu b.active {
+    color: #333;
+    }
+
+/* theme dependent imports */
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ * Table of contents
+ * -----------------------------------------
+ * 1. HTML Elements
+ * 2. LAYOUT
+ * 3. CE_ Features
+ * 4. MOD_ Features
+ * 5. MODULES
+ */
+/* ========================================================================== 
+	1. HTML Elements
+   ========================================================================== */
+/* example seperator
+========================================================================== */
+/**
+ * Short description using Doxygen-style comment format
+ *
+ *
+ */
+/* Basic Comment */
+/* ========================================================================== 
+	2. LAYOUT
+   ========================================================================== */
+/* Sub Section comment block
+========================================================================== */
+/* ========================================================================== 
+	3. CE_ Features
+   ========================================================================== */
+/* Sub Section comment block
+========================================================================== */
+/* ========================================================================== 
+	4. MOD_ Features
+   ========================================================================== */
+/* Sub Section comment block
+========================================================================== */
+/* ========================================================================== 
+	5. MODULES
+   ========================================================================== */
+/* mobile Navigation
+    ========================================================================== */
+#main-navigation-mobile {
+    float: right;
+    clear: right;
+    width: 85px;
+    }
+#main-navigation-mobile .menulabel {
+    display: none;
+    }
+#main-navigation-mobile.jsmob .menulabel {
+    display: block;
+    float: left;
+    padding-top: 33px;
+    color: rgb(224,224,224);
+    font-size: 1.2em;
+    font-weight: 700;
+    }
+#main-navigation-mobile select {
+    width: 70px;
+    margin-top: 5px;
+    }
+#main-navigation-mobile.jsmob select {
+    position: absolute;
+    left: -50px;
+    opacity: 0;
+    zoom: 1;
+    -ms-filter: "alpha(opacity=0)";
+    *filter: alpha(opacity=0);
+    display: block;
+    width: 100px;
+    height: 100%;
+    margin-top: 0;
+    -webkit-appearance: none;
+    }
+#main-navigation-mobile.jsmob form {
+    position: relative;
+    float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 25px 0 0;
+    background: blue;
+    background: rgb(224,224,224);
+    background: -webkit-linear-gradient(top,rgb(224,224,224) 0%,rgb(224,224,224) 20%,#fff 20%,#fff 40%,rgb(224,224,224) 40%,rgb(224,224,224) 60%,#fff 60%,#fff 80%,rgb(224,224,224) 80%,rgb(224,224,224) 100%);
+    background: -moz-linear-gradient(top,rgb(224,224,224) 0%,rgb(224,224,224) 20%,#fff 20%,#fff 40%,rgb(224,224,224) 40%,rgb(224,224,224) 60%,#fff 60%,#fff 80%,rgb(224,224,224) 80%,rgb(224,224,224) 100%);
+    background: -o-linear-gradient(top,rgb(224,224,224) 0%,rgb(224,224,224) 20%,#fff 20%,#fff 40%,rgb(224,224,224) 40%,rgb(224,224,224) 60%,#fff 60%,#fff 80%,rgb(224,224,224) 80%,rgb(224,224,224) 100%);
+    background: linear-gradient(to bottom,rgb(224,224,224) 0%,rgb(224,224,224) 20%,#fff 20%,#fff 40%,rgb(224,224,224) 40%,rgb(224,224,224) 60%,#fff 60%,#fff 80%,rgb(224,224,224) 80%,rgb(224,224,224) 100%);
+    }
+#main-navigation-mobile .submit {
+    padding: 10px;
+    margin-top: 5px;
+    }
+#main-navigation-mobile.jsmob .submit {
+    display: none;
+    }
+
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ * @description provides global helper classes for basic element styling and positioning
+ *
+ * Table of contents
+ * -----------------------------------------
+ * 1. Global Helper Styles
+ */
+/* 1. Global Helper Styles
+   ========================================================================== */
+.centerize {
+    margin: 0 auto;
+    }
+.stretch {
+    float: left;
+    width: 100%;
+    }
+.invisible {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    display: inline;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    }
+
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ * @description provides global helper classes for basic element styling and positioning
+ *
+ * Table of contents
+ * -----------------------------------------
+ *
+ * 0. Default behaviour      - show/hide elements on default for browsers not supporting media queries
+ * 1. Desktop Big            - show/hide elements on defined at defined width or smaller
+ * 2. Desktop Normal         - show/hide elements on defined at defined width or smaller
+ * 3. Tablet Portrait Size   - show/hide elements on defined at defined width or smaller
+ * 4. Smartphone Big Size    - show/hide elements on defined at defined width or smaller
+ * 5. Smartphone Small Size  - show/hide elements on defined at defined width or smaller
+ *
+ * 6. Breakpoint for grid container clear
+ */
+/* ==========================================================================
+	0. Default behaviour
+   ========================================================================== */
+.showBelowDesktopBig,
+.showBelowDesktopSmall,
+.showBelowTabletPortrait,
+.showBelowSmartphoneBig,
+.showAtSmartphoneSmall {
+    display: none;
+    }
+.hideBelowDesktopBig,
+.hideBelowDesktopSmall,
+.hideBelowTabletPortrait,
+.hideBelowSmartphoneBig,
+.hideAtSmartphoneSmall {
+    display: block;
+    }
+
+/* ==========================================================================
+	1. Desktop Big
+   ========================================================================== */
+@media screen and (max-width: 1199px) {
+.showBelowDesktopBig {
+    display: block;
+    }
+.hideBelowDesktopBig {
+    display: none;
+    }
+}
+
+/* ==========================================================================
+	2. Desktop Normal
+   ========================================================================== */
+@media screen and (max-width: 1023px) {
+.showBelowDesktopSmall {
+    display: block;
+    }
+.hideBelowDesktopSmall {
+    display: none;
+    }
+}
+
+/* ==========================================================================
+	3. Tablet Portrait Size
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+.showBelowTabletPortrait {
+    display: block;
+    }
+.hideBelowTabletPortrait {
+    display: none;
+    }
+}
+
+/* ==========================================================================
+	4. Smartphone Big Size
+   ========================================================================== */
+@media screen and (max-width: 479px) {
+.showBelowSmartphoneBig {
+    display: block;
+    }
+.hideBelowSmartphoneBig {
+    display: none;
+    }
+}
+
+/* ==========================================================================
+	5. Smartphone Small Size
+   ========================================================================== */
+@media screen and (max-width: 320px) {
+.showBelowSmartphoneSmall {
+    display: block;
+    }
+.hideBelowSmartphoneSmall {
+    display: none;
+    }
+}
+
+/* ==========================================================================
+	6. Grid Container Float Clear
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+/*----------------------------------------------------------------------------
+    :Desc Defines the base style of the grid wrapper thats needed to hold the units
+    -----------------------------------------------------------------------------*/
+.grid {
+    min-width: 0;
+    }
+
+/*----------------------------------------------------------------------------
+    :Desc Reset all unit styles
+    -----------------------------------------------------------------------------*/
+.u_1,
+.u_2,
+.u_3,
+.u_4,
+.u_5,
+.u_6,
+.u_7,
+.u_8,
+.u_9,
+.u_10,
+.u_11,
+.u_12,
+.u_13,
+.u_14,
+.u_15,
+.u_16,
+.u_17,
+.u_18,
+.u_19,
+.u_20,
+.u_21,
+.u_22,
+.u_23,
+.u_24 {
+    float: none;
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    }
+}
+
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ * @description provides global helper classes for basic element styling and positioning
+ *
+ * Table of contents
+ * -----------------------------------------
+ *
+ * 0. Default behaviour      - show/hide elements on default for browsers not supporting media queries
+ * 1. Desktop Big            - show/hide elements on defined at defined width or smaller
+ * 2. Desktop Normal         - show/hide elements on defined at defined width or smaller
+ * 3. Tablet Portrait Size   - show/hide elements on defined at defined width or smaller
+ * 4. Smartphone Big Size    - show/hide elements on defined at defined width or smaller
+ * 5. Smartphone Small Size  - show/hide elements on defined at defined width or smaller
+ */
+/* ==========================================================================
+	1. Desktop Big
+   ========================================================================== */
+@media screen and (max-width: 1199px) {
+}
+
+/* ==========================================================================
+	2. Desktop Normal
+   ========================================================================== */
+@media screen and (max-width: 1023px) {
+}
+
+/* ==========================================================================
+	3. Tablet Portrait Size
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+}
+
+/* ==========================================================================
+	4. Smartphone Big Size
+   ========================================================================== */
+@media screen and (max-width: 479px) {
+}
+
+/* ==========================================================================
+	5. Smartphone Small Size
+   ========================================================================== */
+@media screen and (max-width: 320px) {
+}
+
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ * @description provides global helper classes for basic element styling and positioning
+ *
+ * Table of contents
+ * -----------------------------------------
+ *
+ * 0. Default behaviour      - show/hide elements on default for browsers not supporting media queries
+ * 1. Desktop Big            - show/hide elements on defined at defined width or smaller
+ * 2. Desktop Normal         - show/hide elements on defined at defined width or smaller
+ * 3. Tablet Portrait Size   - show/hide elements on defined at defined width or smaller
+ * 4. Smartphone Big Size    - show/hide elements on defined at defined width or smaller
+ * 5. Smartphone Small Size  - show/hide elements on defined at defined width or smaller
+ */
+/* ==========================================================================
+	1. Desktop Big
+   ========================================================================== */
+@media screen and (max-width: 1199px) {
+}
+
+/* ==========================================================================
+	2. Desktop Normal
+   ========================================================================== */
+@media screen and (max-width: 1023px) {
+}
+
+/* ==========================================================================
+	3. Tablet Portrait Size
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+}
+
+/* ==========================================================================
+	4. Smartphone Big Size
+   ========================================================================== */
+@media screen and (max-width: 479px) {
+}
+
+/* ==========================================================================
+	5. Smartphone Small Size
+   ========================================================================== */
+@media screen and (max-width: 320px) {
+}

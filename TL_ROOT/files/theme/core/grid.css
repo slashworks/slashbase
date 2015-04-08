@@ -1,0 +1,142 @@
+/*.............................................................................
+    Package: Menu
+    Description: Menu Helpers to quickly build up Menues
+    Author: Joe Ray Gregory
+    Licence: LGPL
+.............................................................................*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global grid basics
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/*----------------------------------------------------------------------------
+:Desc Define some standard grid values and prepare use of variables with css crush
+-----------------------------------------------------------------------------*/
+@define {
+    gutterWidth: math( ($(gridWidth) * $(gutterColumnRatio)) / ($(columnCount) * $(columnCount)) );
+    columnWidth: math( (100/$(columnCount)) - $(gutterWidth) )%;
+}
+
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of the grid wrapper thats needed to hold the units
+-----------------------------------------------------------------------------*/
+.grid {
+    width: 100%;
+    max-width: $(gridWidth)px;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of each unit
+-----------------------------------------------------------------------------*/
+.u_1,
+.u_2,
+.u_3,
+.u_4,
+.u_5,
+.u_6,
+.u_7,
+.u_8,
+.u_9,
+.u_10,
+.u_11,
+.u_12,
+.u_13,
+.u_14,
+.u_15,
+.u_16,
+.u_17,
+.u_18,
+.u_19,
+.u_20,
+.u_21,
+.u_22,
+.u_23,
+.u_24 {
+    margin-left: ( $(gutterWidth) / 2 )%;
+    margin-right: ( $(gutterWidth) / 2 )%;
+    float: left;
+    min-height: 1px;
+}
+
+/* clear max column */
+.u_$(columnCount){
+    float : none;
+    clear: both;
+}
+
+
+/*----------------------------------------------------------------------------
+:Desc Defines the width of each unit
+-----------------------------------------------------------------------------*/
+
+.u_1    { width: $(columnWidth); }
+.u_2    { width: (  2 * $(columnWidth) +  1 * $(gutterWidth) )%; }
+.u_3    { width: (  3 * $(columnWidth) +  2 * $(gutterWidth) )%; }
+.u_4    { width: (  4 * $(columnWidth) +  3 * $(gutterWidth) )%; }
+.u_5    { width: (  5 * $(columnWidth) +  4 * $(gutterWidth) )%; }
+.u_6    { width: (  6 * $(columnWidth) +  5 * $(gutterWidth) )%; }
+.u_7    { width: (  7 * $(columnWidth) +  6 * $(gutterWidth) )%; }
+.u_8    { width: (  8 * $(columnWidth) +  7 * $(gutterWidth) )%; }
+.u_9    { width: (  9 * $(columnWidth) +  8 * $(gutterWidth) )%; }
+.u_10   { width: ( 10 * $(columnWidth) +  9 * $(gutterWidth) )%; }
+.u_11   { width: ( 11 * $(columnWidth) + 10 * $(gutterWidth) )%; }
+.u_12   { width: ( 12 * $(columnWidth) + 11 * $(gutterWidth) )%; }
+.u_13   { width: ( 13 * $(columnWidth) + 12 * $(gutterWidth) )%; }
+.u_14   { width: ( 14 * $(columnWidth) + 13 * $(gutterWidth) )%; }
+.u_15   { width: ( 15 * $(columnWidth) + 14 * $(gutterWidth) )%; }
+.u_16   { width: ( 16 * $(columnWidth) + 15 * $(gutterWidth) )%; }
+.u_17   { width: ( 17 * $(columnWidth) + 16 * $(gutterWidth) )%; }
+.u_18   { width: ( 18 * $(columnWidth) + 17 * $(gutterWidth) )%; }
+.u_19   { width: ( 19 * $(columnWidth) + 18 * $(gutterWidth) )%; }
+.u_20   { width: ( 20 * $(columnWidth) + 19 * $(gutterWidth) )%; }
+.u_21   { width: ( 21 * $(columnWidth) + 20 * $(gutterWidth) )%; }
+.u_22   { width: ( 22 * $(columnWidth) + 21 * $(gutterWidth) )%; }
+.u_23   { width: ( 23 * $(columnWidth) + 22 * $(gutterWidth) )%; }
+.u_24   { width: ( 24 * $(columnWidth) + 23 * $(gutterWidth) )%; }
+
+/*----------------------------------------------------------------------------
+:Desc Push with the width of units + gutter etc.
+-----------------------------------------------------------------------------*/
+
+.p_1    { margin-left: ($(columnWidth)+ ($(gutterWidth)*1.5))%; }
+.p_2    { margin-left: (  2 * $(columnWidth) +  1 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_3    { margin-left: (  3 * $(columnWidth) +  2 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_4    { margin-left: (  4 * $(columnWidth) +  3 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_5    { margin-left: (  5 * $(columnWidth) +  4 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_6    { margin-left: (  6 * $(columnWidth) +  5 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_7    { margin-left: (  7 * $(columnWidth) +  6 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_8    { margin-left: (  8 * $(columnWidth) +  7 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_9    { margin-left: (  9 * $(columnWidth) +  8 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_10   { margin-left: ( 10 * $(columnWidth) +  9 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_11   { margin-left: ( 11 * $(columnWidth) + 10 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_12   { margin-left: ( 12 * $(columnWidth) + 11 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_13   { margin-left: ( 13 * $(columnWidth) + 12 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_14   { margin-left: ( 14 * $(columnWidth) + 13 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_15   { margin-left: ( 15 * $(columnWidth) + 14 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_16   { margin-left: ( 16 * $(columnWidth) + 15 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_17   { margin-left: ( 17 * $(columnWidth) + 16 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_18   { margin-left: ( 18 * $(columnWidth) + 17 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_19   { margin-left: ( 19 * $(columnWidth) + 18 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_20   { margin-left: ( 20 * $(columnWidth) + 19 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_21   { margin-left: ( 21 * $(columnWidth) + 20 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_22   { margin-left: ( 22 * $(columnWidth) + 21 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_23   { margin-left: ( 23 * $(columnWidth) + 22 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+.p_24   { margin-left: ( 24 * $(columnWidth) + 23 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
+
+/*----------------------------------------------------------------------------
+: Clear First-Childs
+-----------------------------------------------------------------------------*/
+
+.grid [class^=u_]:first-child,
+.u_12,
+.grid-first {
+    clear: both;
+}
+

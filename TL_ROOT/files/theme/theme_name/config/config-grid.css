@@ -1,0 +1,52 @@
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ * @description provides global helper classes for basic element styling and positioning
+ *
+ * Table of contents
+ * -----------------------------------------
+ *
+ * A. Basic grid constants and breakpoint for grid container clear
+ *
+ * B.
+ * B.1. Desktop Big            - show/hide elements on defined at defined width or smaller
+ * B.2. Desktop Normal         - show/hide elements on defined at defined width or smaller
+ * B.3. Tablet Portrait Size   - show/hide elements on defined at defined width or smaller
+ * B.4. Smartphone Big Size    - show/hide elements on defined at defined width or smaller
+ * B.5. Smartphone Small Size  - show/hide elements on defined at defined width or smaller
+ */
+
+
+
+/* ==========================================================================
+	A. Grid Configuration
+   ========================================================================== */
+@define {
+
+    gridWidth:          1200;   /* Width of the container */
+    columnCount:        12;     /* Number of columns */
+    gutterColumnRatio:  0.4;    /* Reatio between gutter and column width */
+
+    grid-container-clear: 767px;
+
+}
+
+
+
+/* ==========================================================================
+	B. Breakpoint configuration
+   ========================================================================== */
+
+
+@define {
+
+    below-desktop-big:     1199px;
+    below-desktop-normal:  1023px;
+    below-tablet-portait:   767px;
+    below-smartphone-big:   479px;
+    below-smartphone-small: 320px;
+
+}
