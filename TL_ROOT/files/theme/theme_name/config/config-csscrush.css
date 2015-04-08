@@ -17,13 +17,12 @@
 	1. Basic Variables
    ========================================================================== */
 
-@define{
 
+@define{
 
     /* architecture
     ========================================================================== */
     border-radius: 4px;
-
 
 
     /* font
@@ -46,14 +45,10 @@
     mobile-nav-color: $(dark-company-color);
 
 
-
     /* lines
     ========================================================================== */
     base-border-achitecture: 1px solid #ccc;
     dark-border-achitecture: 1px solid #ccc;
-
-
-
 
 
     /* backgrounds
@@ -67,6 +62,7 @@
 /* ==========================================================================
 	2. Extensions - use: .class{@include myFirstDependencie}
    ========================================================================== */
+
 
 @abstract myFirstDependencie{}
 

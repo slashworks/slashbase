@@ -17,10 +17,10 @@
 @import "config/config-csscrush.css";
 
 /* core files */
-@import "../core/normalize.css";
+@import "../vendor/normalize.css";
 @import "../core/core.css";
 @import "../core/grid.css";
-@import "../core/pure.css";
+@import "pure.css";
 
 /* theme dependent imports */
 @import "theme.css";

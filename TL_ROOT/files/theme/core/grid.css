@@ -1,7 +1,11 @@
+/* ==========================================================================
+   CSS from slashworks
+========================================================================== */
+
 /*.............................................................................
-    Package: Menu
-    Description: Menu Helpers to quickly build up Menues
-    Author: Joe Ray Gregory
+    Package: slashbase
+    Description: basic grid definitions
+    Author: Joe Ray Gregory @ slashworks.de
     Licence: LGPL
 .............................................................................*/
 
@@ -13,14 +17,17 @@
 /*----------------------------------------------------------------------------
 :Desc Define some standard grid values and prepare use of variables with css crush
 -----------------------------------------------------------------------------*/
+
 @define {
     gutterWidth: math( ($(gridWidth) * $(gutterColumnRatio)) / ($(columnCount) * $(columnCount)) );
     columnWidth: math( (100/$(columnCount)) - $(gutterWidth) )%;
 }
 
+
 /*----------------------------------------------------------------------------
 :Desc Defines the base style of the grid wrapper thats needed to hold the units
 -----------------------------------------------------------------------------*/
+
 .grid {
     width: 100%;
     max-width: $(gridWidth)px;
@@ -32,9 +39,11 @@
     clear: both;
 }
 
+
 /*----------------------------------------------------------------------------
 :Desc Defines the base style of each unit
 -----------------------------------------------------------------------------*/
+
 .u_1,
 .u_2,
 .u_3,
@@ -101,11 +110,12 @@
 .u_23   { width: ( 23 * $(columnWidth) + 22 * $(gutterWidth) )%; }
 .u_24   { width: ( 24 * $(columnWidth) + 23 * $(gutterWidth) )%; }
 
+
 /*----------------------------------------------------------------------------
 :Desc Push with the width of units + gutter etc.
 -----------------------------------------------------------------------------*/
 
-.p_1    { margin-left: ($(columnWidth)+ ($(gutterWidth)*1.5))%; }
+.p_1    { margin-left: (      $(columnWidth)                        + ($(gutterWidth)*1.5))%; }
 .p_2    { margin-left: (  2 * $(columnWidth) +  1 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
 .p_3    { margin-left: (  3 * $(columnWidth) +  2 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
 .p_4    { margin-left: (  4 * $(columnWidth) +  3 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
@@ -130,6 +140,7 @@
 .p_23   { margin-left: ( 23 * $(columnWidth) + 22 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
 .p_24   { margin-left: ( 24 * $(columnWidth) + 23 * $(gutterWidth)  + ($(gutterWidth)*1.5))%; }
 
+
 /*----------------------------------------------------------------------------
 : Clear First-Childs
 -----------------------------------------------------------------------------*/
@@ -139,4 +150,3 @@
 .grid-first {
     clear: both;
 }
-

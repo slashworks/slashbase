@@ -1,4 +1,3 @@
-<?php //echo $this->showTemplateVars(); ?>
 <?php
 $target = \Input::post('swMobileNavtarget');
 if($target){

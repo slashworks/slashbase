@@ -1,20 +1,12 @@
 <script>
-
-    window.addEvent('domready',function(){
-
+    window.addEvent('domready', function() {
         var mobileNav = document.getElementById('main-navigation-mobile');
         var navSelect = $$('#main-navigation-mobile select');
-        if(mobileNav){
-
+        if (mobileNav) {
             mobileNav.addClass('jsmob');
-            navSelect.addEvent('change',function(){
-                window.location.href=this.value;
-            })
-
+            navSelect.addEvent('change', function() {
+                window.location.href = this.value;
+            });
         }
-
-
-    })
-
-
+    });
 </script>
