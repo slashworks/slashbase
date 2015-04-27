@@ -1,0 +1,60 @@
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ *
+ */
+
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+
+:any(button,input[type='submit'],.button,.submit){
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+:any(button,input[type='submit'],.button,.submit)::-moz-focus-inner{
+    padding: 0;
+    border: 0
+}
+
+:any(button,input[type='submit'],.button,.submit){
+@include baseButton;
+}
+
+:any(button,input[type='submit'],.button,.submit):hover,
+:any(button,input[type='submit'],.button,.submit):focus
+{
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+    box-shadow: 0 0 0 1px rgba(150, 150, 150, .15) inset, 0 0 6px rgba(150, 150, 150, .2) inset
+}
+
+:any(button,input[type='submit'],.button,.submit):focus
+{
+    outline: 0
+}
+
+:any(button,input[type='submit'],.button,.submit):active
+{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15) inset, 0 0 6px rgba(0, 0, 0, .2) inset
+}
+
+:any(button,input[type='submit'],.button,.submit)[disabled]:any(:hover,:focus)
+{
+    border: 0;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: alpha(opacity=40);
+    opacity: .4;
+    cursor: not-allowed;
+    box-shadow: none
+}
+
+

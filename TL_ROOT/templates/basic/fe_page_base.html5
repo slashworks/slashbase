@@ -76,6 +76,7 @@
 <?php echo $this->getCustomSections('bottom'); ?>
 
 <?php echo $this->mootools; ?>
+<?php echo $this->jsTemplates; ?>
 
 <?php if (!$this->disableCron): ?>
     <script>

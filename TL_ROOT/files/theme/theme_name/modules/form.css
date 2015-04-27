@@ -1,0 +1,261 @@
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ *
+ */
+
+
+/* ==========================================================================
+	5. FORM
+   ========================================================================== */
+
+
+form {
+    margin: 0
+}
+
+form fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+form legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px
+}
+
+form button,
+form input,
+form select,
+form textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+form button,
+form input {
+    line-height: normal
+}
+
+form button,
+form input[type=button],
+form input[type=reset],
+form input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    *overflow: visible
+}
+
+form button[disabled],
+form input[disabled] {
+    cursor: default
+}
+
+form input[type=checkbox],
+form input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px
+}
+
+form input[type=search] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+form input[type=search]::-webkit-search-cancel-button,
+form input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+form button::-moz-focus-inner,
+form input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+form textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=url],
+form input[type=date],
+form input[type=month],
+form input[type=time],
+form input[type=datetime],
+form input[type=datetime-local],
+form input[type=week],
+form input[type=number],
+form input[type=search],
+form input[type=tel],
+form input[type=color],
+form select,
+form textarea {
+    padding: .5em .6em;
+    display: inline-block;
+    border: $(base-border-achitecture);
+    font-size: .8em;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: $(border-radius);
+    -webkit-transition: .3s linear border;
+    -moz-transition: .3s linear border;
+    -ms-transition: .3s linear border;
+    -o-transition: .3s linear border;
+    transition: .3s linear border;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased
+}
+/* stacked */
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=url],
+form input[type=date],
+form input[type=month],
+form input[type=time],
+form input[type=datetime],
+form input[type=datetime-local],
+form input[type=week],
+form input[type=number],
+form input[type=search],
+form input[type=tel],
+form input[type=color],
+form select,
+form label,
+form textarea {
+    display: block;
+    margin: .25em 0
+}
+
+form input[type=text]:focus,
+form input[type=password]:focus,
+form input[type=email]:focus,
+form input[type=url]:focus,
+form input[type=date]:focus,
+form input[type=month]:focus,
+form input[type=time]:focus,
+form input[type=datetime]:focus,
+form input[type=datetime-local]:focus,
+form input[type=week]:focus,
+form input[type=number]:focus,
+form input[type=search]:focus,
+form input[type=tel]:focus,
+form input[type=color]:focus,
+form select:focus,
+form textarea:focus {
+    outline: 0;
+    outline: thin dotted   \9;
+    border-color: #129FEA
+}
+
+form input[type=file]:focus,
+form input[type=radio]:focus,
+form input[type=checkbox]:focus {
+    outline: thin dotted #333;
+    outline: 1px auto #129FEA
+}
+
+form .pure-checkbox, form .pure-radio {
+    margin: .5em 0;
+    display: block
+}
+
+form input[type=text][disabled],
+form input[type=password][disabled],
+form input[type=email][disabled],
+form input[type=url][disabled],
+form input[type=date][disabled],
+form input[type=month][disabled],
+form input[type=time][disabled],
+form input[type=datetime][disabled],
+form input[type=datetime-local][disabled],
+form input[type=week][disabled],
+form input[type=number][disabled],
+form input[type=search][disabled],
+form input[type=tel][disabled],
+form input[type=color][disabled],
+form select[disabled],
+form textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3
+}
+
+form input[readonly],
+form select[readonly],
+form textarea[readonly],
+form input[readonly]:focus,
+form select[readonly]:focus,
+form textarea[readonly]:focus {
+    background: #eee;
+    color: #777;
+    border-color: #ccc
+}
+
+form input:focus:invalid,
+form textarea:focus:invalid,
+form select:focus:invalid {
+    color: #b94a48;
+    border: 1px solid #ee5f5b
+}
+
+form input:focus:invalid:focus,
+form textarea:focus:invalid:focus,
+form select:focus:invalid:focus {
+    border-color: #e9322d
+}
+
+form input[type=file]:focus:invalid:focus,
+form input[type=radio]:focus:invalid:focus,
+form input[type=checkbox]:focus:invalid:focus {
+    outline-color: #e9322d
+}
+
+form select {
+    border: $(base-border-achitecture);
+    background-color: #fff
+}
+
+form select[multiple] {
+    height: auto
+}
+
+form label {
+    margin: .5em 0 .2em;
+    font-size: 90%
+}
+
+form fieldset {
+    margin: 0;
+    padding: .35em 0 .75em;
+    border: 0
+}
+
+form legend {
+    display: block;
+    width: 100%;
+    padding: .3em 0;
+    margin-bottom: .3em;
+    font-size: 125%;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5
+}

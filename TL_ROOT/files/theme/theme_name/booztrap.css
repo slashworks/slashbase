@@ -18,13 +18,20 @@
 
 /* core files */
 @import "../vendor/normalize.css";
-@import "../core/core.css";
 @import "../core/grid.css";
-@import "pure.css";
+
+/* theme css modules */
+@import "modules/accordion.css";
+@import "modules/button.css";
+@import "modules/form.css";
+@import "modules/slider.css";
+@import "modules/table.css";
+@import "modules/textformat.css";
 
 /* theme dependent imports */
 @import "theme.css";
 @import "theme-helpers.css";
-@import "media-queries/mq-grid.css";
+
+/* responsive css */
 @import "media-queries/mq-layout.css";
 @import "media-queries/mq-content.css";

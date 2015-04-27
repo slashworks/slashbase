@@ -1,0 +1,84 @@
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ *
+ */
+
+
+/* ==========================================================================
+    SLIDER
+    ========================================================================== */
+
+.ce_sliderStart{
+    background: $(light-company-color);
+    position: relative;
+}
+
+.content-slider {
+    overflow:hidden;
+    visibility:hidden;
+    position:relative;
+}
+
+.slider-wrapper {
+    overflow:hidden;
+    position:relative;
+}
+
+.slider-wrapper>* {
+    float:left;
+    width:100%;
+    position:relative;
+}
+
+.slider-control {
+    height:30px;
+}
+
+.slider-control a,.slider-control span {
+    position:absolute;
+    display:inline-block;
+}
+
+.slider-control .slider-prev {
+    top:0;
+    left:0;
+    height: 100%;
+    width: 75px;
+    z-index: 100;
+    background: #ccc;
+    text-indent: -9999px;
+}
+
+.slider-control .slider-next {
+    top:0;
+    right:0;
+    height: 100%;
+    width: 75px;
+    z-index: 100;
+    background: #ccc;
+    text-indent: -9999px;
+}
+
+.slider-control .slider-menu {
+    bottom:10px;
+    height: 30px;
+    width:50%;
+    left:50%;
+    margin-left:-25%;
+    font-size:3em;
+    text-align:center;
+}
+
+.slider-control .slider-menu b {
+    color:#fff;
+    cursor:pointer;
+}
+
+.slider-control .slider-menu b.active {
+    color:#333;
+}

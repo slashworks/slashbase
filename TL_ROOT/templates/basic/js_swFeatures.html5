@@ -1,0 +1,15 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        var mobileNav = document.getElementById('main-navigation-mobile');
+        var navSelect = document.querySelectorAll('#main-navigation-mobile .select');
+        if (mobileNav) {
+            mobileNav.classList.add('jsmob');
+            for (var i = 0; i < navSelect.length; i++) {
+                navSelect.item(i).addEventListener('change', function () {
+                    window.location.href = this.value;
+                });
+            }
+        }
+    });
+</script>

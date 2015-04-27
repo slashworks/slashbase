@@ -21,17 +21,35 @@
    ========================================================================== */
 
 
-/* example seperator
-========================================================================== */
+    html {
+        font-size: 62.5%;
+        font-family: $(base-font);
+        color: $(base-font-color);
+    }
 
-/**
- * Short description using Doxygen-style comment format
- *
- *
- */
+    body{
+        font-size: $(base-font-size);
+    }
 
 
-/* Basic Comment */
+    /* <img helper
+    do not use during development
+    ========================================================================== */
+
+    /*
+    img,
+    object,
+    embed{
+        max-width: 100%;
+    }
+
+
+    img{
+        height: auto;
+    }
+
+    ========================================================================== */
+
 
 
 
@@ -41,8 +59,8 @@
    ========================================================================== */
 
 
-/* Sub Section comment block
-========================================================================== */
+    /* Sub Section comment block
+    ========================================================================== */
 
 
 
@@ -52,8 +70,8 @@
    ========================================================================== */
 
 
-/* Sub Section comment block
-========================================================================== */
+    /* Sub Section comment block
+    ========================================================================== */
 
 
 
@@ -64,8 +82,8 @@
    ========================================================================== */
 
 
-/* Sub Section comment block
-========================================================================== */
+    /* Sub Section comment block
+    ========================================================================== */
 
 
 
@@ -127,9 +145,7 @@
         -moz-box-sizing    : border-box;
         box-sizing         : border-box;
         background: $(mobile-nav-color);
-
         background: linear-gradient(to bottom,$(mobile-nav-color) 0%,$(mobile-nav-color) 20%,#ffffff 20%, #ffffff 40%,$(mobile-nav-color) 40%,$(mobile-nav-color) 60%,#ffffff 60%,#ffffff 80%, $(mobile-nav-color) 80%,$(mobile-nav-color) 100%);
-
     }
 
     #main-navigation-mobile .submit{

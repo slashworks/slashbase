@@ -1,0 +1,44 @@
+/* ==========================================================================
+  CSS from slashworks
+   ========================================================================== */
+
+/**
+ * @author Stefan Melz @ slashworks stefan@slash-works.de
+ *
+ *
+ */
+
+
+/* ==========================================================================
+    ACCORDION
+    ========================================================================== */
+
+
+.ce_accordion {
+    display: block;
+    border: $(base-border-achitecture)ccc;
+    border-radius: $(border-radius);
+    background-clip: padding-box;
+}
+
+.ce_accordionSingle{
+    margin: 0 0 10px;
+}
+
+.ce_accordionStart:nth-child(2n){
+    border-top:none;
+}
+
+.toggler{
+    background-color: $(light-company-color);
+    padding: 9.5px;
+    cursor: pointer;
+}
+
+.toggler:focus{
+    outline: none;
+}
+
+.accordion{
+    padding: 9.5px;
+}
