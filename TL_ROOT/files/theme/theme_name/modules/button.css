@@ -13,7 +13,6 @@
    BUTTONS
    ========================================================================== */
 
-
 :any(button,input[type='submit'],.button,.submit){
     display: inline-block;
     text-align: center;

@@ -13,8 +13,8 @@
 /* basic and required imports */
 
 /* config */
-@import "config/config-grid.css";
-@import "config/config-csscrush.css";
+@import "config/grid.css";
+@import "config/variables.css";
 
 /* core files */
 @import "../vendor/normalize.css";
@@ -24,6 +24,7 @@
 @import "modules/accordion.css";
 @import "modules/button.css";
 @import "modules/form.css";
+@import "modules/navigation.css";
 @import "modules/slider.css";
 @import "modules/table.css";
 @import "modules/textformat.css";
