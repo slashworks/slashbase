@@ -1,7 +1,8 @@
 
-Installation der slashbase zu eine Contaobase
+Installation der slashbase zu einer Contaobase
 ============================================
 
+* sql dump in die richtige datenbank importieren
 * localconfig konfigurieren
 * htaccess in .htaccess umbenennen
 * files > theme > theme_name ordner duplizieren oder umbennnen zu namen des themes
