@@ -28,7 +28,7 @@
 
 @define {
 
-    gridWidth:          1200;   /* Width of the container */
+    gridWidth:          1900;   /* Width of the container */
     columnCount:        12;     /* Number of columns */
     gutterColumnRatio:  0.4;    /* Reatio between gutter and column width */
 
