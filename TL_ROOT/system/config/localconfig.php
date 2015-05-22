@@ -35,7 +35,7 @@ $project = '';
  * On Local machines and dev
  */
 
-if($_srv['SERVER_ADDR'] === "127.0.0.1" || preg_match("/^dev./", $_srv['SERVER_NAME']) || preg_match("/xip.io$/", $_srv['SERVER_NAME'])){
+if($_srv['SERVER_ADDR'] === "127.0.0.1" || $_srv['SERVER_ADDR'] === "::1" || preg_match("/^dev./", $_srv['SERVER_NAME']) || preg_match("/xip.io$/", $_srv['SERVER_NAME'])){
 
     $GLOBALS['TL_CONFIG']['displayErrors'] = true;
     $GLOBALS['TL_CONFIG']['bypassCache'] = true;

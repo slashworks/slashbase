@@ -5,7 +5,6 @@ if($target){
 }
 ?>
 <?php if ($this->level == 'level_1'): ?>
-
     <div class="menulabel">Menü</div>
     <form action="{{env::request}}" method="post">
     <div class="formbody">
